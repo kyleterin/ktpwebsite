@@ -25,6 +25,11 @@ Mobile-first dark contact card; kinetic hero; direct contact channels; vCard dow
 - Footer with vCard (.vcf) download + scannable QR modal of the live URL
 - Grain overlay, amber spotlight glow, lenis momentum scrolling, staggered scroll reveals
 
+### 2026-09-23 (later)
+- Open Graph/Twitter share tags + custom 1200x630 share card at /og-image.jpg (concert bg + portrait + KP logo + credits)
+- Brief alerts: every inquiry now emails kyle.terin@gmail.com via Emergent-managed Resend (EMERGENT_EMAIL_KEY in backend/.env; send failures logged, never block the form)
+- Intro slate plays only on first visit per session (sessionStorage ktp_intro_seen); hero reveal delay adapts (Hero base prop)
+
 ## Backlog
 - P0 (DONE 2026-09-23): Real email/phone/location pulled from owner's resume; marquee now lists real credits (Allegiant, EDC, Oracle AI World, Cowboy Carter Tour, Pitbull/NKOTB residencies…); services strip removed per owner ("too maximalist")
 - P1 (DONE 2026-09-23): Real Instagram (@kyleterin) and LinkedIn added; booking link is a live Google Calendar invite (action=TEMPLATE, add=kyle.terin@gmail.com). Optional upgrade: swap in a Google Calendar appointment-schedule link for slot-based availability

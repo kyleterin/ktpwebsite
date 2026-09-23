@@ -6,16 +6,15 @@ import { CARD, IMAGES } from "@/lib/cardData";
 import { downloadVCard } from "@/lib/vcard";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
-const BASE_DELAY = 1.55;
 
-function MaskedLine({ text, index, className }: { text: string; index: number; className?: string }) {
+function MaskedLine({ text, index, base, className }: { text: string; index: number; base: number; className?: string }) {
   return (
     <span className="block overflow-hidden pb-[0.08em] -mb-[0.08em]">
       <motion.span
         className={`block ${className ?? ""}`}
         initial={{ y: "115%" }}
         animate={{ y: "0%" }}
-        transition={{ duration: 0.9, ease: EASE, delay: BASE_DELAY + index * 0.13 }}
+        transition={{ duration: 0.9, ease: EASE, delay: base + index * 0.13 }}
       >
         {text}
       </motion.span>
@@ -23,7 +22,8 @@ function MaskedLine({ text, index, className }: { text: string; index: number; c
   );
 }
 
-export default function Hero() {
+export default function Hero({ base = 1.55 }: { base?: number }) {
+  const BASE_DELAY = base;
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const imgY = useTransform(scrollYProgress, [0, 1], [0, 70]);
@@ -59,8 +59,8 @@ export default function Hero() {
           data-testid="hero-headline"
           className="font-heading text-[clamp(3rem,12vw,6.5rem)] font-bold uppercase leading-[0.92] tracking-tighter"
         >
-          <MaskedLine text={CARD.line1} index={0} />
-          <MaskedLine text={CARD.line2} index={1} className="text-stroke" />
+          <MaskedLine text={CARD.line1} index={0} base={base} />
+          <MaskedLine text={CARD.line2} index={1} base={base} className="text-stroke" />
         </h1>
 
         <motion.div

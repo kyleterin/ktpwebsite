@@ -11,7 +11,8 @@ import Footer from "@/components/card/Footer";
 import { CARD } from "@/lib/cardData";
 
 export default function Home() {
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(() => !sessionStorage.getItem("ktp_intro_seen"));
+  const [heroBase] = useState(() => (sessionStorage.getItem("ktp_intro_seen") ? 0.2 : 1.55));
 
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.09 });
@@ -26,9 +27,11 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (!intro) return;
+    sessionStorage.setItem("ktp_intro_seen", "1");
     const t = setTimeout(() => setIntro(false), 1400);
     return () => clearTimeout(t);
-  }, []);
+  }, [intro]);
 
   return (
     <div className="relative min-h-screen bg-[#0A0A0C] text-[#EDEDEE]">
@@ -59,7 +62,7 @@ export default function Home() {
 
       <main className="relative z-10 mx-auto max-w-4xl px-4 pt-6 sm:px-6 sm:pt-8">
         <TopBar />
-        <Hero />
+        <Hero base={heroBase} />
         <Marquee />
         <ActionLinks />
         <InquirySection />
