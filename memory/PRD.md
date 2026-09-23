@@ -26,7 +26,8 @@ Mobile-first dark contact card; kinetic hero; direct contact channels; vCard dow
 - Grain overlay, amber spotlight glow, lenis momentum scrolling, staggered scroll reveals
 
 ## Backlog
-- P0: Replace placeholder contact details (email/phone/socials/booking URL in `src/lib/cardData.ts`) with real ones from the owner's resume
+- P0 (DONE 2026-09-23): Real email/phone/location pulled from owner's resume; marquee now lists real credits (Allegiant, EDC, Oracle AI World, Cowboy Carter Tour, Pitbull/NKOTB residencies…); services strip removed per owner ("too maximalist")
+- P1: Replace remaining placeholders (Instagram, LinkedIn, booking URL) with real handles
 - P1: Resume/CV download section once the resume is attached
 - P1: Real photo of Kyle-Terin in the hero frame
 - P2: Email notification on new inquiry (Resend), past-shows/credits carousel, i18n

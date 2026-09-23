@@ -6,7 +6,6 @@ import TopBar from "@/components/card/TopBar";
 import Hero from "@/components/card/Hero";
 import Marquee from "@/components/card/Marquee";
 import ActionLinks from "@/components/card/ActionLinks";
-import ServicesStrip from "@/components/card/ServicesStrip";
 import InquirySection from "@/components/card/InquirySection";
 import Footer from "@/components/card/Footer";
 import { CARD } from "@/lib/cardData";
@@ -63,7 +62,6 @@ export default function Home() {
         <Hero />
         <Marquee />
         <ActionLinks />
-        <ServicesStrip />
         <InquirySection />
         <Footer />
       </main>

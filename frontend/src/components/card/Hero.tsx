@@ -49,27 +49,7 @@ export default function Hero() {
           >
             <MaskedLine text={CARD.line1} index={0} />
             <MaskedLine text={CARD.line2} index={1} className="text-stroke" />
-            <span className="block overflow-hidden">
-              <motion.span
-                className="block font-serif text-[clamp(1.6rem,5vw,3rem)] font-normal normal-case italic tracking-normal text-amber-400/90"
-                initial={{ y: "115%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 0.9, ease: EASE, delay: BASE_DELAY + 0.32 }}
-              >
-                runs the show.
-              </motion.span>
-            </span>
           </h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: EASE, delay: BASE_DELAY + 0.5 }}
-            className="mt-6 max-w-md text-base leading-relaxed text-zinc-300"
-            data-testid="hero-tagline"
-          >
-            {CARD.tagline}
-          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
