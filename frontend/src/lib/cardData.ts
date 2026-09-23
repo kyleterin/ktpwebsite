@@ -4,7 +4,7 @@ export const CARD = {
   line1: "KYLE-TERIN",
   line2: "PHILLIP",
   role: "Production Coordinator & Personal Assistant",
-  location: "Las Vegas, Nevada",
+  location: "Las Vegas / Los Angeles",
   travel: "Global travel ready",
   availability: "Available for Q3/Q4",
   email: "kyle.terin@gmail.com",

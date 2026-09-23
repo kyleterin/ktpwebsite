@@ -66,7 +66,7 @@ export default function InquirySection() {
           </div>
           <div className="flex flex-col items-start justify-center gap-6 p-8 sm:col-span-7 sm:p-12">
             <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
-              Got a date on the calendar?
+              What&apos;s your next project?
             </h2>
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger

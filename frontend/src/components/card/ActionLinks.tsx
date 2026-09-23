@@ -23,13 +23,32 @@ const CHANNELS: Channel[] = [
   { key: "linkedin", title: "LinkedIn", value: CARD.linkedinHandle, href: CARD.linkedin, badge: "Credits & endorsements", copyValue: CARD.linkedin, Icon: Linkedin },
 ];
 
+function fallbackCopy(text: string): boolean {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  let ok = false;
+  try {
+    ok = document.execCommand("copy");
+  } catch {
+    ok = false;
+  }
+  ta.remove();
+  return ok;
+}
+
 async function copy(text: string, label: string) {
+  let ok = true;
   try {
     await navigator.clipboard.writeText(text);
-    toast.success(`${label} copied`);
   } catch {
-    toast.error("Copy failed — long-press to copy instead");
+    ok = fallbackCopy(text);
   }
+  if (ok) toast.success(`${label} copied`);
+  else toast.error("Copy failed — long-press to copy instead");
 }
 
 export default function ActionLinks() {
