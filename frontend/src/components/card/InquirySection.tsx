@@ -54,20 +54,20 @@ export default function InquirySection() {
   return (
     <section data-testid="inquiry-section" className="mt-16 sm:mt-24">
       <Reveal>
-        <div className="relative overflow-hidden rounded-3xl border border-white/10">
-          <img
-            data-testid="inquiry-portrait"
-            src={IMAGES.portrait}
-            alt="Kyle-Terin Phillip"
-            className="absolute inset-0 h-full w-full object-cover object-[center_15%] opacity-45"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0C] via-[#0A0A0C]/75 to-[#0A0A0C]/20" />
-          <div className="relative flex flex-col items-start gap-6 p-8 sm:flex-row sm:items-center sm:justify-between sm:p-12">
-            <div>
-              <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
-                Got a date on the calendar?
-              </h2>
-            </div>
+        <div className="grid grid-cols-1 overflow-hidden rounded-3xl border border-white/10 bg-[#121216] sm:grid-cols-12">
+          <div className="relative sm:col-span-5">
+            <img
+              data-testid="inquiry-portrait"
+              src={IMAGES.portrait}
+              alt="Kyle-Terin Phillip"
+              className="block h-auto w-full"
+            />
+            <div className="pointer-events-none absolute inset-2 rounded-2xl border border-amber-500/25" />
+          </div>
+          <div className="flex flex-col items-start justify-center gap-6 p-8 sm:col-span-7 sm:p-12">
+            <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
+              Got a date on the calendar?
+            </h2>
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger
                 render={

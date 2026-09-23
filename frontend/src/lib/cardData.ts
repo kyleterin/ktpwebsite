@@ -15,8 +15,8 @@ export const CARD = {
   instagramHandle: "@kyleterin",
   linkedin: "https://www.linkedin.com/in/kyle-terin-phillip-43b613117/",
   linkedinHandle: "in/kyle-terin-phillip",
-  booking: "https://cal.com/kyleterin/intro",
-  bookingHandle: "cal.com/kyleterin/intro",
+  booking: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Intro%20Call%20%E2%80%94%20Kyle-Terin%20Phillip&details=15-minute%20intro%20call%20to%20scope%20production%20support.&add=kyle.terin@gmail.com",
+  bookingHandle: "Google Calendar invite",
   note: "VIP logistics, artist relations, touring & corporate production — Las Vegas based, travel ready.",
   vcfFilename: "kyle-terin-phillip.vcf",
 };
