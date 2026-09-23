@@ -1,0 +1,288 @@
+{
+  "theme": "dark",
+  "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / ARCHETYPE 5: LUXURY SHOWBIZ",
+  "brand_identity": {
+    "name": "KAI MERCER",
+    "handle": "@kaimercer.prod",
+    "role_title": "Production Coordinator & Executive Personal Assistant",
+    "tagline": "Orchestrating live stadium arenas, high-stakes keynote tours & executive backstage logistics across music, tech & experiential.",
+    "location": "Los Angeles / New York / London — Global Travel Ready",
+    "availability_status": "AVAILABLE FOR Q3/Q4 TOURS & KEYNOTES"
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#0A0A0C",
+        "on_bg": "#EDEDEE",
+        "on_bg_muted": "#A1A1AA",
+        "roles": {
+          "link": "#F59E0B",
+          "error": "#EF4444",
+          "success": "#10B981"
+        }
+      },
+      {
+        "name": "card_surface",
+        "kind": "solid",
+        "bg": "#121216",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#9CA3AF"
+      },
+      {
+        "name": "action_row_surface",
+        "kind": "solid",
+        "bg": "#18181E",
+        "on_bg": "#FAFAFA",
+        "on_bg_muted": "#A1A1AA"
+      },
+      {
+        "name": "panel_glass",
+        "kind": "glass",
+        "contrast_against": "#141419",
+        "guarantee": "backdrop-blur-xl bg-[#121216]/80 border border-white/10 shadow-2xl",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#D1D5DB"
+      },
+      {
+        "name": "hero_spotlight",
+        "kind": "image",
+        "contrast_against": "#0D0D11",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(10,10,12,0.3) 0%, rgba(10,10,12,0.95) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#D4D4D8"
+      },
+      {
+        "name": "badge_pill",
+        "kind": "solid",
+        "bg": "#1F1F26",
+        "on_bg": "#FBBF24",
+        "on_bg_muted": "#D1D5DB"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#EDEDEE",
+        "on_bg": "#0A0A0C",
+        "on_bg_muted": "#4B5563"
+      }
+    ],
+    "accent": "#F59E0B",
+    "accent_hover": "#D97706",
+    "on_accent": "#000000",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_hover": "rgba(245, 158, 11, 0.4)",
+    "tactical_cyan": "#38BDF8"
+  },
+  "typography": {
+    "font_imports": [
+      "@fontsource-variable/space-grotesk",
+      "@fontsource-variable/playfair-display",
+      "@fontsource-variable/jetbrains-mono",
+      "@fontsource-variable/dm-sans"
+    ],
+    "font_heading": "'Space Grotesk Variable', sans-serif",
+    "font_serif_accent": "'Playfair Display Variable', Georgia, serif",
+    "font_mono": "'JetBrains Mono Variable', monospace",
+    "font_body": "'DM Sans Variable', sans-serif",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "typesetting_rules": {
+      "hero_headline": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.95]",
+      "section_title": "text-2xl sm:text-3xl font-bold tracking-tight text-white uppercase font-sans",
+      "serif_accent": "font-serif italic font-normal tracking-normal text-amber-400/90",
+      "overline_mono": "font-mono text-xs uppercase tracking-[0.25em] text-zinc-400",
+      "body_text": "text-base leading-relaxed text-zinc-300 font-sans"
+    }
+  },
+  "entry_surfaces": {
+    "/": "dark theatrical contact card — kinetic hero left/top with masked line reveal & portrait badge, action links & services right/stack"
+  },
+  "layout_and_grids": {
+    "structure": "Single-page ultra-polished mobile-first contact card container with max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-12",
+    "mobile_first_philosophy": "Compact top hero + direct primary action buttons immediately visible in the initial viewport on mobile. Desktop spreads to an asymmetric 12-column editorial bento grid.",
+    "bento_desktop_grid": "grid grid-cols-1 md:grid-cols-12 gap-5",
+    "sections": [
+      {
+        "id": "header_brand",
+        "description": "Minimal top bar with custom SVG monogram logo, live local time (LA / NYC / London toggle or live UTC clock), and 'Available for Booking' pulsing live indicator dot."
+      },
+      {
+        "id": "hero_profile",
+        "description": "Kinetic headline with line-by-line staggered reveal, spotlight-framed cropped portrait with duotone/stage lighting effect, role title, and immediate quick-actions: 'Save to Contacts (.vcf)' & 'Book Intro Call'."
+      },
+      {
+        "id": "quick_actions_hub",
+        "description": "Tactile, high-contrast action list (Email, Phone/SMS, WhatsApp direct chat, Instagram, LinkedIn, Calendly Booking). Includes copy-to-clipboard buttons with Sonner toast feedback and direct click-through triggers."
+      },
+      {
+        "id": "services_strip",
+        "description": "Compact 4-column services matrix: 1. Live Touring & Music Production 2. High-Stakes Keynote & Experiential 3. VIP & Executive Personal Assistance 4. Backstage Logistics & Rider Management."
+      },
+      {
+        "id": "marquee_editorial",
+        "description": "Ultra-slow atmospheric kinetic ribbon displaying past arena tours, festival stages, corporate keynotes, and NDA-grade client endorsements."
+      },
+      {
+        "id": "contact_modal_or_quick_message",
+        "description": "Interactive instant brief form for quick production inquiries with production type selector, date range picker, and send confirmation."
+      },
+      {
+        "id": "footer",
+        "description": "Monochrome technical footer with custom SVG stamp, vCard download trigger, QR Code display modal for scanning on physical phones, and copyright."
+      }
+    ]
+  },
+  "motion_and_interactions": {
+    "engine": "motion/react (pre-bundled)",
+    "smooth_scroll": "Lenis smooth scroll integration (or lightweight CSS scroll momentum)",
+    "animations": {
+      "stagger_hero_lines": "initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], staggerChildren: 0.1 }}",
+      "card_hover": "hover:-translate-y-1 hover:border-amber-500/40 hover:shadow-[0_10px_30px_rgba(245,158,11,0.12)] transition-all duration-300",
+      "button_press": "active:scale-[0.98] transition-transform duration-100",
+      "badge_pulse": "animate-pulse duration-1000"
+    }
+  },
+  "image_urls": {
+    "primary_portrait": {
+      "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWMlMjBwb3J0cmFpdCUyMGNyZWF0aXZlJTIwZGlyZWN0b3IlMjBsaWdodGluZ3xlbnwwfHx8fDE3OTAxOTU5MzV8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Main spotlight profile photo with moody studio lighting in sharp rounded-2xl cropped frame with golden inner border glow.",
+      "category": "Hero / Profile Avatar"
+    },
+    "backstage_production_bg": {
+      "url": "https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxzdGFnZSUyMGNvbmNlcnQlMjBwcm9kdWN0aW9uJTIwY3JldyUyMGJhY2tzdGFnZXxlbnwwfHx8fDE3OTAxOTU5NDB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Atmospheric soundstage and film/concert lighting background used with low-opacity overlay for texture.",
+      "category": "Atmospheric Backdrop / Services Background"
+    },
+    "concert_crowd_bg": {
+      "url": "https://images.pexels.com/photos/19082673/pexels-photo-19082673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Silhouetted concert crew behind stage lighting.",
+      "category": "Touring & Experiential Credentials"
+    }
+  },
+  "svg_logo_mark": {
+    "description": "Original custom geometric monogram: interlocking stylized 'K' and 'M' in a faceted hexagonal/diamond perimeter with an amber glow dot.",
+    "code_snippet": "<svg viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" className=\"w-9 h-9\"><rect width=\"40\" height=\"40\" rx=\"8\" fill=\"#18181E\" stroke=\"rgba(255,255,255,0.12)\"/><path d=\"M12 10V30M12 20L22 10M12 20L22 30\" stroke=\"#F59E0B\" strokeWidth=\"2.5\" strokeLinecap=\"round\" strokeLinejoin=\"round\"/><path d=\"M22 30V15L28 23L34 15V30\" stroke=\"#EDEDEE\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"/><circle cx=\"32\" cy=\"10\" r=\"2\" fill=\"#F59E0B\"/></svg>"
+  },
+  "vcard_spec": {
+    "filename": "kai-mercer-contact.vcf",
+    "content_generation_logic": "Client-side downloadable .vcf file generated dynamically via Blob containing: FN:Kai Mercer, TITLE:Production Coordinator & Executive Personal Assistant, TEL;TYPE=CELL:+1 (310) 892-4419, EMAIL;TYPE=WORK:kai@mercerproduction.com, URL:https://mercerproduction.com, NOTE:Live touring, festival stages, high-stakes keynotes & VIP personal logistics.",
+    "qr_code_feature": "Interactive modal generating a scannable SVG QR Code pointing to this web contact card for direct phone scanning at backstage events and conferences."
+  },
+  "contact_channels": [
+    {
+      "key": "email",
+      "title": "Email",
+      "value": "kai@mercerproduction.com",
+      "href": "mailto:kai@mercerproduction.com",
+      "badge": "2hr Response Time",
+      "icon": "Mail",
+      "primary": true
+    },
+    {
+      "key": "phone",
+      "title": "Direct Mobile / Signal",
+      "value": "+1 (310) 892-4419",
+      "href": "tel:+13108924419",
+      "badge": "Urgent Production Only",
+      "icon": "PhoneCall",
+      "primary": false
+    },
+    {
+      "key": "whatsapp",
+      "title": "WhatsApp Direct",
+      "value": "Chat on WhatsApp",
+      "href": "https://wa.me/13108924419?text=Hi%20Kai%2C%20reaching%20out%20regarding%20a%20production%20inquiry",
+      "badge": "Instant Message",
+      "icon": "MessageSquare",
+      "primary": false
+    },
+    {
+      "key": "booking",
+      "title": "Schedule 15-Min Intro",
+      "value": "cal.com/kaimercer/intro",
+      "href": "https://calendly.com",
+      "badge": "Tour / Gig Scoping",
+      "icon": "Calendar",
+      "primary": true
+    },
+    {
+      "key": "instagram",
+      "title": "Instagram (BTS / Gigs)",
+      "value": "@kaimercer.prod",
+      "href": "https://instagram.com",
+      "badge": "Touring BTS",
+      "icon": "Instagram",
+      "primary": false
+    },
+    {
+      "key": "linkedin",
+      "title": "LinkedIn Network",
+      "value": "in/kaimercer-production",
+      "href": "https://linkedin.com",
+      "badge": "Credits & Endorsements",
+      "icon": "Linkedin",
+      "primary": false
+    }
+  ],
+  "services_data": [
+    {
+      "code": "SRV-01",
+      "title": "Live Touring & Stage Coordination",
+      "description": "Advancing technical riders, vendor management, ground transport fleets, freight logistics, and backstage wristbanding across arena tours & multi-stage music festivals.",
+      "tags": ["Stadium Tours", "Artist Hospitality", "Crew Travel", "Rider Advance"]
+    },
+    {
+      "code": "SRV-02",
+      "title": "Keynotes & Experiential Launches",
+      "description": "Flawless run-of-show execution for tier-1 tech keynotes, brand activations, and immersive experiential marketing pop-ups with zero tolerance for downtime.",
+      "tags": ["Run of Show", "AV Synchronization", "Speaker Care", "VIP Access"]
+    },
+    {
+      "code": "SRV-03",
+      "title": "Executive Personal Assistance",
+      "description": "Discreet, 24/7 shadow-level support for C-suite leaders and headline artists: private aviation, high-security itineraries, NDA compliance, and personal lifestyle management.",
+      "tags": ["Confidential / NDA", "Private Aviation", "Dynamic Schedule", "Protocol"]
+    },
+    {
+      "code": "SRV-04",
+      "title": "Crisis Management & Rapid Sourcing",
+      "description": "Solving 2:00 AM production bottlenecks, sourcing rare gear in foreign markets, emergency re-routing, and on-the-fly contingency engineering.",
+      "tags": ["24/7 Ready", "Global Fixer", "Vendor Rolodex", "Permits"]
+    }
+  ],
+  "accessibility_and_testing": {
+    "wcag_compliance": "WCAG 2.1 AA / APCA standards met. Dark background (#0A0A0C) paired with high-contrast text (#EDEDEE / #FFFFFF) achieving > 12:1 contrast ratio. Amber accent (#F59E0B) strictly paired with black or dark solid pills with verified readability.",
+    "testing_attributes": {
+      "save_vcard_button": "data-testid=\"save-vcard-button\"",
+      "qr_code_modal_trigger": "data-testid=\"qr-code-trigger\"",
+      "contact_channel_item": "data-testid=\"contact-channel-[key]\"",
+      "copy_button": "data-testid=\"copy-[key]-button\"",
+      "booking_cta": "data-testid=\"booking-cta-button\"",
+      "quick_message_form": "data-testid=\"quick-inquiry-form\"",
+      "inquiry_submit_button": "data-testid=\"inquiry-submit-button\"",
+      "services_item": "data-testid=\"service-card-[code]\""
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Replace font variables in `frontend/src/index.css` with Space Grotesk Variable, Playfair Display Variable, and DM Sans Variable.",
+    "2. Render a mobile-first, high-fashion, Awwwards-grade single page contact card for 'Kai Mercer' in `frontend/src/pages/Home.tsx`.",
+    "3. Implement interactive features: functional .vcf vCard file generation & download via browser Blob API; copy-to-clipboard buttons with toast notification via Sonner; interactive QR code modal for scanning; interactive Quick Inquiry drawer/dialog using Shadcn Dialog/Sheet.",
+    "4. Ensure kinetic entrance animations using `motion/react` (staggered headline reveal, button hover spring states, slow marquee ticker).",
+    "5. Provide dark theme as default with rich tactile card styling, 1px subtle white/amber borders, and crystal-clear typography hierarchy."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Never apply universal transition like 'transition: all' which breaks transforms.",
+    "Never center-align the app container globally.",
+    "All interactive elements must have clear focus, active and hover contrast states.",
+    "Include data-testid on all primary actions, link buttons, and modal triggers.",
+    "Use Sonner for toasts upon copying links, downloading vCards, or submitting inquiries."
+  ]
+}
