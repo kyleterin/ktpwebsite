@@ -67,9 +67,6 @@ export default function InquirySection() {
               <h2 className="mt-3 font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
                 Got a date on the calendar?
               </h2>
-              <p className="mt-2 max-w-md text-sm leading-relaxed text-zinc-300">
-                Send a 30-second brief — production type, dates, city — and I'll come back with availability and a plan.
-              </p>
             </div>
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger

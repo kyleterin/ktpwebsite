@@ -6,7 +6,7 @@ export const CARD = {
   role: "Production Coordinator & Personal Assistant",
   location: "Las Vegas, Nevada",
   travel: "Global travel ready",
-  availability: "Available for Q3/Q4 tours & keynotes",
+  availability: "Available for Q3/Q4",
   email: "kyle.terin@gmail.com",
   phoneDisplay: "702-683-7082",
   phoneRaw: "+17026837082",
@@ -22,7 +22,7 @@ export const CARD = {
 };
 
 export const IMAGES = {
-  hero: "https://images.unsplash.com/photo-1568732626545-b9208b767347?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxiYWNrc3RhZ2UlMjBjb25jZXJ0JTIwcHJvZHVjdGlvbiUyMGNyZXclMjBzaWxob3VldHRlJTIwc3RhZ2UlMjBsaWdodHN8ZW58MHx8fHwxNzkwMTk1OTcyfDA&ixlib=rb-4.1.0&q=85",
+  hero: "https://customer-assets-rejwkqb3.emergentagent.net/job_coord-card/artifacts/nkat7wn2_image-57~2.webp",
   camera: "https://images.unsplash.com/photo-1576280314550-773c50583407?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxiYWNrc3RhZ2UlMjBjb25jZXJ0JTIwcHJvZHVjdGlvbiUyMGNyZXclMjBzaWxob3VldHRlJTIwc3RhZ2UlMjBsaWdodHN8ZW58MHx8fHwxNzkwMTk1OTcyfDA&ixlib=rb-4.1.0&q=85",
 };
 

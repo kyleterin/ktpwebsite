@@ -38,7 +38,7 @@ export default function ActionLinks() {
       <Reveal>
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">Direct lines</p>
         <h2 className="mt-2 font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
-          Get me <span className="font-serif normal-case italic tracking-normal text-amber-400/90">on set</span>
+          Let&apos;s <span className="font-serif normal-case italic tracking-normal text-amber-400/90">work</span>
         </h2>
       </Reveal>
       <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
