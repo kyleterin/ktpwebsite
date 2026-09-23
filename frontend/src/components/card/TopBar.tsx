@@ -24,10 +24,7 @@ export default function TopBar() {
       <div className="flex items-center gap-3">
         <LogoMark className="w-9 h-9" />
         <div className="leading-tight">
-          <p className="font-heading text-sm font-bold tracking-wide">KTP</p>
-          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-zinc-500">
-            Prod. &amp; Assistance
-          </p>
+          <p className="font-heading text-sm font-bold tracking-wide">Welcome.</p>
         </div>
       </div>
       <div className="flex items-center gap-4">

@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 import { toast } from "sonner";
 import LogoMark from "./LogoMark";
 import QrModal from "./QrModal";
@@ -30,17 +30,19 @@ export default function Footer() {
             <Download className="h-4 w-4" />
             Save contact (.vcf)
           </button>
+          <a
+            data-testid="resume-download-button"
+            href="/Kyle-Terin-Phillip-Resume.pdf"
+            download
+            className="flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 font-heading text-xs font-bold uppercase tracking-wide text-zinc-100 transition-colors duration-200 hover:border-amber-500/50 hover:text-amber-300 active:scale-[0.97]"
+          >
+            <FileText className="h-4 w-4" />
+            Resume (PDF)
+          </a>
           <QrModal />
         </div>
       </div>
-      <div className="mt-10 flex flex-col gap-2 border-t border-white/5 pb-8 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-600">
-          {CARD.location} — {CARD.travel}
-        </p>
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-600">
-          © {new Date().getFullYear()} {CARD.name} — Every cue on time
-        </p>
-      </div>
+      <div className="pb-10" />
     </footer>
   );
 }

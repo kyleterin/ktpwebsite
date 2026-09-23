@@ -102,15 +102,6 @@ export default function Hero() {
           {CARD.location} — {CARD.travel}
         </motion.p>
       </div>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: BASE_DELAY + 0.95 }}
-        className="absolute bottom-4 right-5 font-serif text-sm italic text-amber-400/80"
-      >
-        est. chaos, managed
-      </motion.p>
     </section>
   );
 }

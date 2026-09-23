@@ -56,15 +56,15 @@ export default function InquirySection() {
       <Reveal>
         <div className="relative overflow-hidden rounded-3xl border border-white/10">
           <img
-            src={IMAGES.camera}
-            alt="Camera operator silhouetted against stage light"
-            className="absolute inset-0 h-full w-full object-cover opacity-40"
+            data-testid="inquiry-portrait"
+            src={IMAGES.portrait}
+            alt="Kyle-Terin Phillip"
+            className="absolute inset-0 h-full w-full object-cover object-[center_15%] opacity-45"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0C] via-[#0A0A0C]/80 to-[#0A0A0C]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0C] via-[#0A0A0C]/75 to-[#0A0A0C]/20" />
           <div className="relative flex flex-col items-start gap-6 p-8 sm:flex-row sm:items-center sm:justify-between sm:p-12">
             <div>
-              <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber-400/80">Scene 02 — Your call</p>
-              <h2 className="mt-3 font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-white sm:text-3xl">
                 Got a date on the calendar?
               </h2>
             </div>

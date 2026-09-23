@@ -23,7 +23,7 @@ export const CARD = {
 
 export const IMAGES = {
   hero: "https://customer-assets-rejwkqb3.emergentagent.net/job_coord-card/artifacts/nkat7wn2_image-57~2.webp",
-  camera: "https://images.unsplash.com/photo-1576280314550-773c50583407?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxiYWNrc3RhZ2UlMjBjb25jZXJ0JTIwcHJvZHVjdGlvbiUyMGNyZXclMjBzaWxob3VldHRlJTIwc3RhZ2UlMjBsaWdodHN8ZW58MHx8fHwxNzkwMTk1OTcyfDA&ixlib=rb-4.1.0&q=85",
+  portrait: "https://customer-assets-rejwkqb3.emergentagent.net/job_coord-card/artifacts/21edooms_20260816_110144.webp",
 };
 
 export const MARQUEE_ITEMS = [

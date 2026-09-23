@@ -28,7 +28,7 @@ Mobile-first dark contact card; kinetic hero; direct contact channels; vCard dow
 ## Backlog
 - P0 (DONE 2026-09-23): Real email/phone/location pulled from owner's resume; marquee now lists real credits (Allegiant, EDC, Oracle AI World, Cowboy Carter Tour, Pitbull/NKOTB residencies…); services strip removed per owner ("too maximalist")
 - P1 (DONE 2026-09-23): Real Instagram (@kyleterin) and LinkedIn added. Only booking URL (cal.com/kyleterin/intro) remains a placeholder — replace with a real Cal.com/Calendly link when the owner has one
-- P1: Resume/CV download section once the resume is attached
+- P1 (DONE 2026-09-23): Resume available as a styled PDF at /Kyle-Terin-Phillip-Resume.pdf with a footer "Resume (PDF)" download button; owner's portrait placed in the inquiry CTA background
 - P1: Real photo of Kyle-Terin in the hero frame
 - P2: Email notification on new inquiry (Resend), past-shows/credits carousel, i18n
 
