@@ -1,6 +1,8 @@
-// Typed fetch layer over the FastAPI backend. Base is the relative "/api" prefix so the
-// same code works in dev (Vite proxies /api → :8001) and behind a single origin in prod.
-const BASE = "/api";
+// Typed fetch layer over the FastAPI backend. Base is "/api" prefixed by an optional
+// VITE_API_URL origin, so the same code works in dev (Vite proxies /api -> :8001), in a
+// single-origin deploy, and when the frontend and backend are on separate origins (e.g.
+// Cloudflare Pages + Railway) by setting VITE_API_URL to the backend's origin at build time.
+const BASE = `${import.meta.env.VITE_API_URL ?? ""}/api`;
 
 // Fields are declared, not constructor parameter properties: tsconfig sets
 // erasableSyntaxOnly, which rejects `constructor(readonly status: number)`.
@@ -22,6 +24,7 @@ async function request<T>(method: string, path: string, body?: JsonBody): Promis
   // Auth rides the httpOnly session cookie automatically — never add auth headers here.
   const res = await fetch(`${BASE}${path}`, {
     method,
+    credentials: "include",
     headers: body === undefined ? undefined : { "Content-Type": "application/json" },
     body: body === undefined ? undefined : JSON.stringify(body),
   });
