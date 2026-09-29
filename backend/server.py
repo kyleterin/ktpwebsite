@@ -157,6 +157,7 @@ class InquiryCreate(BaseModel):
 class Inquiry(InquiryCreate):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    email_sent: bool = False
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
@@ -180,6 +181,7 @@ async def create_inquiry(input: InquiryCreate):
     inquiry = Inquiry(**input.model_dump())
     doc = inquiry.model_dump()
     await db.inquiries.insert_one(doc)
+    email_sent = False
     try:
         html = (
             '<table role="presentation" width="100%"><tr><td style="padding:24px;font-family:Arial,sans-serif;color:#141419">'
@@ -194,8 +196,12 @@ async def create_inquiry(input: InquiryCreate):
             '</td></tr></table>'
         )
         await send_email(to=OWNER_EMAIL, subject="New production brief from your contact card", html=html)
+        email_sent = True
     except Exception as exc:
         logger.error("Inquiry email failed: %s", exc)
+    if email_sent:
+        await db.inquiries.update_one({"id": inquiry.id}, {"$set": {"email_sent": True}})
+    inquiry.email_sent = email_sent
     return inquiry
 
 @api_router.get("/inquiries", response_model=List[Inquiry])
